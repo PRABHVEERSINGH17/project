@@ -1,0 +1,17 @@
+/*Ramesh basic salary is input through the keyboard . His dearness allowance id
+ * 40% of basic salary and house rent allowance is 20% of basic salary. write a
+ * program to calculate his good salary*/
+#include <stdio.h>
+int main() {
+  float basic, da, hra, grpay;
+  printf("Enter the basic salary of Ramesh:");
+  scanf("%f", &basic);
+  da = 0.4 * basic;
+  hra = 0.2 * basic;
+  grpay = hra + da + basic;
+  printf("Basic salary of Ramesh=%f\n", basic);
+  printf("Dearness allowance=%f\n", da);
+  printf("House Rent Allowance=%f\n", hra);
+  printf("Gross pay of Ramesh is%f\n", grpay);
+  return 0;
+}
