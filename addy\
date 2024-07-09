@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int i,rev=0;
+    printf("Enter the number to be reversed:");
+    scanf("%d",&i);
+    while(i!=0){
+        rev=rev*10+i%10;
+        i=i/10;
+    }
+    printf("Reversed number is %d",rev);
+    return 0;
+}
+Enter the number to be reversed:456789   
+Reversed number is 987654 
