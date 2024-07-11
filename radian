@@ -1,0 +1,108 @@
+#include <stdio.h>
+#include <math.h>
+
+void cartesian_to_polar(double x, double y, double *r, double *theta) {
+    // Calculate radius r
+    *r = sqrt(x * x + y * y);
+    
+    // Calculate angle theta in radians
+    *theta = atan2(y, x);
+    
+    // Convert angle theta from radians to degrees
+    *theta = *theta * 180.0 / M_PI;
+    
+    // Ensure theta is between 0 and 360 degrees
+    if (*theta < 0) {
+        *theta += 360.0;
+    }
+}
+
+int main() {
+    double x, y, radius, angle_degrees;
+    
+    // Input Cartesian coordinates
+    printf("Enter x-coordinate: ");
+    scanf("%lf", &x);
+    printf("Enter y-coordinate: ");
+    scanf("%lf", &y);
+    
+    // Convert Cartesian to Polar coordinates
+    cartesian_to_polar(x, y, &radius, &angle_degrees);
+    
+    // Print the results
+    printf("Polar coordinates (r, θ): (%.2f, %.2f degrees)\n", radius, angle_degrees);
+    
+    return 0;
+}
+#include <stdio.h>
+#include <math.h>
+
+void cartesian_to_polar(double x, double y, double *r, double *theta) {
+    // Calculate radius r
+    *r = sqrt(x * x + y * y);
+    
+    // Calculate angle theta in radians
+    *theta = atan2(y, x);
+    
+    // Convert angle theta from radians to degrees
+    *theta = *theta * 180.0 / M_PI;
+    
+    // Ensure theta is between 0 and 360 degrees
+    if (*theta < 0) {
+        *theta += 360.0;
+    }
+}
+
+int main() {
+    double x, y, radius, angle_degrees;
+    
+    // Input Cartesian coordinates
+    printf("Enter x-coordinate: ");
+    scanf("%lf", &x);
+    printf("Enter y-coordinate: ");
+    scanf("%lf", &y);
+    
+    // Convert Cartesian to Polar coordinates
+    cartesian_to_polar(x, y, &radius, &angle_degrees);
+    
+    // Print the results
+    printf("Polar coordinates (r, θ): (%.2f, %.2f degrees)\n", radius, angle_degrees);
+    
+    return 0;
+}
+#include <stdio.h>
+#include <math.h>
+
+void cartesian_to_polar(double x, double y, double *r, double *theta) {
+    // Calculate radius r
+    *r = sqrt(x * x + y * y);
+    
+    // Calculate angle theta in radians
+    *theta = atan2(y, x);
+    
+    // Convert angle theta from radians to degrees
+    *theta = *theta * 180.0 / M_PI;
+    
+    // Ensure theta is between 0 and 360 degrees
+    if (*theta < 0) {
+        *theta += 360.0;
+    }
+}
+
+int main() {
+    double x, y, radius, angle_degrees;
+    
+    // Input Cartesian coordinates
+    printf("Enter x-coordinate: ");
+    scanf("%lf", &x);
+    printf("Enter y-coordinate: ");
+    scanf("%lf", &y);
+    
+    // Convert Cartesian to Polar coordinates
+    cartesian_to_polar(x, y, &radius, &angle_degrees);
+    
+    // Print the results
+    printf("Polar coordinates (r, θ): (%.2f, %.2f degrees)\n", radius, angle_degrees);
+    
+    return 0;
+}
