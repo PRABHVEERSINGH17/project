@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+  int x,y;
+  float r,thetha;
+  printf("enter the cartesian cooridinates\n");
+  scanf("%d%d",&x,&y);
+r=sqrt(x*x+y*y);
+thetha=atan(y/x);
+thetha=thetha*180/3.14;
+printf("%f %f",r,thetha);
+return 0;
+}
+enter the cartesian cooridinates
+5   
+8
+Polar cooridinates are:9.433981 45.022827 
