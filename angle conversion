@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+  float degree,radian;
+  printf("Enter the angle in degree:");
+  scanf("%f",&degree);
+  radian=degree*(3.14/180);
+  printf("Sin Value %f\n",sin(radian));
+  printf("cos value %f\n",cos(radian));
+  printf("tan value %f\n",tan(radian));
+  printf("cosec value %f\n",1/sin(radian));
+  printf("sec value %f\n",1/cos(radian));
+  printf("cot value %f\n",1/tan(radian));
+}
+Enter the angle in degree:150
+Sin Value 0.501149
+cos value -0.865361
+tan value -0.579121
+cosec value 1.995414
+sec value -1.155587
+cot value -1.726754
+ 
