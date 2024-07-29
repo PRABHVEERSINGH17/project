@@ -1,0 +1,19 @@
+ /* If the cost price and selling price of an item is input through the keyboard , write a program whether the seller has made the profit or incured loss. Also determine how much profit he made or loss he incured*/
+#include<stdio.h>
+int main(){
+  float cp,sp,p,l;
+  printf("Enter the cost price and selling price:");
+  scanf("%f%f",&cp,&sp);
+  p=sp-cp;
+  l=cp-sp;
+  if(p>0)
+    printf("The seller made a profit of rs %f\n",p);
+  if(l>0)
+    printf("The seller made a loss of rs %f\n",l);
+  if(p==0)
+    printf("The seller made no profit and no loss\n");
+  return 0;
+}
+Enter the cost price and selling price:12
+45
+The seller made a profit of rs 33.000000
