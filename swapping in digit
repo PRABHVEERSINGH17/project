@@ -1,0 +1,116 @@
+#include <stdio.h>
+
+int main() {
+    int num, first_digit, second_digit, swapped_num;
+
+    // Input the two-digit number
+    printf("Enter a two-digit number: ");
+    scanf("%d", &num);
+
+    // Ensure the number is two digits
+    if (num < 10 || num >99) {
+        printf("The number is not a two-digit number.\n");
+        return 1;
+    }
+
+    // Extract digits
+    first_digit = num / 10;         // Extract the first digit (tens place)
+    second_digit = num % 10;        // Extract the second digit (units place)
+
+    // Swap digits
+    swapped_num = second_digit * 10 + first_digit;
+
+    // Display the original and swapped numbers
+    printf("Original number: %d\n", num);
+    printf("Swapped number: %d\n", swapped_num);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int num, first_digit, second_digit, swapped_num;
+
+    // Input the two-digit number
+    printf("Enter a two-digit number: ");
+    scanf("%d", &num);
+
+    // Ensure the number is two digits
+    if (num < 10 || num >99) {
+        printf("The number is not a two-digit number.\n");
+        return 1;
+    }
+
+    // Extract digits
+    first_digit = num / 10;         // Extract the first digit (tens place)
+    second_digit = num % 10;        // Extract the second digit (units place)
+
+    // Swap digits
+    swapped_num = second_digit * 10 + first_digit;
+
+    // Display the original and swapped numbers
+    printf("Original number: %d\n", num);
+    printf("Swapped number: %d\n", swapped_num);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int num, first_digit, second_digit, swapped_num;
+
+    // Input the two-digit number
+    printf("Enter a two-digit number: ");
+    scanf("%d", &num);
+
+    // Ensure the number is two digits
+    if (num < 10 || num >99) {
+        printf("The number is not a two-digit number.\n");
+        return 1;
+    }
+
+    // Extract digits
+    first_digit = num / 10;         // Extract the first digit (tens place)
+    second_digit = num % 10;        // Extract the second digit (units place)
+
+    // Swap digits
+    swapped_num = second_digit * 10 + first_digit;
+
+    // Display the original and swapped numbers
+    printf("Original number: %d\n", num);
+    printf("Swapped number: %d\n", swapped_num);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int num, first_digit, second_digit, swapped_num;
+
+    // Input the two-digit number
+    printf("Enter a two-digit number: ");
+    scanf("%d", &num);
+
+    // Ensure the number is two digits
+    if (num < 10 || num >99) {
+        printf("The number is not a two-digit number.\n");
+        return 1;
+    }
+
+    // Extract digits
+    first_digit = num / 10;         // Extract the first digit (tens place)
+    second_digit = num % 10;        // Extract the second digit (units place)
+
+    // Swap digits
+    swapped_num = second_digit * 10 + first_digit;
+
+    // Display the original and swapped numbers
+    printf("Original number: %d\n", num);
+    printf("Swapped number: %d\n", swapped_num);
+
+    return 0;
+}
+Enter a two-digit number: 23
+Original number: 23
+Swapped number: 32
+ 
