@@ -1,0 +1,136 @@
+#include<stdio.h>
+int main(){
+int a=300,b,c;
+if(a>=400)
+b=300;
+c=200;
+printf("%d %d\n",b,c);
+return 0;
+}
+300
+200
+#include<stdio.h>
+int main(){
+  int x=10,y=20;
+  if(x==y);
+  printf("%d %d\n",x,y);
+  return 0;
+}
+10 20
+#include<stdio.h>
+int main(){
+  int x=3;
+  float y=3.0;
+  if(x==y)
+    printf("x and y are equal");
+  else
+    primtf("x and y are not equal:");
+  return 0;
+}
+x and y are equal 
+#include<stdio.h>
+int main(){
+  int x=3,y,z;
+  y=x=10;
+  z=x<10;
+  printf("x =%d\n, y= %d\n,z=%d\n",x,y,z);
+  return 0;
+}
+x =10
+, y= 10
+,z=0
+#include<stdio.h>
+int main(){
+int i=65;
+char j='A';
+if(i==j)
+printf("c is WOW\N"):
+else
+printf(" c is headache");
+return 0;
+}
+Certainly! Let's go through the provided C code step by step to understand its behavior and output.
+
+### Code Explanation
+
+```c
+#include <stdio.h>
+
+int main() {
+    int i = 65;      // Step 1: Declare and initialize an integer variable i with the value 65
+    char j = 'A';    // Step 2: Declare and initialize a character variable j with the character 'A'
+
+    if (i == j) {    // Step 3: Compare the integer i with the character j
+        printf("C is WOW\n");  // Step 4: If i and j are equal, print "C is WOW"
+    } else {
+        printf("C is headache"); // Step 5: If i and j are not equal, print "C is headache"
+    }
+
+    return 0;        // Step 6: Return 0 to indicate successful completion of the program
+}
+```
+
+### Detailed Breakdown
+
+1. **Header File Inclusion:**
+   ```c
+   #include <stdio.h>
+   ```
+   This line includes the standard I/O library which is required for using `printf` and `scanf`.
+
+2. **Main Function Declaration:**
+   ```c
+   int main() {
+   ```
+   This is the entry point of the program. Execution starts here.
+
+3. **Variable Initialization:**
+   ```c
+   int i = 65;
+   char j = 'A';
+   ```
+   - `i` is an integer variable set to `65`.
+   - `j` is a character variable initialized with `'A'`.
+
+4. **Comparison of `i` and `j`:**
+   ```c
+   if (i == j) {
+   ```
+   - In C, characters are internally represented as integers based on their ASCII values.
+   - The ASCII value of the character `'A'` is `65`.
+   - Therefore, `j` is implicitly converted to its ASCII value (`65`) during the comparison.
+   - So, `i` (which is `65`) is compared to `j` (which is also `65` after conversion). Hence, `i == j` evaluates to `true`.
+
+5. **Conditional Output:**
+   - **If the condition is true (`i == j`):**
+     ```c
+     printf("C is WOW\n");
+     ```
+     This line is executed and prints `"C is WOW"`, followed by a newline.
+
+   - **If the condition were false:**
+     ```c
+     printf("C is headache");
+     ```
+     This line would execute instead, printing `"C is headache"`.
+
+6. **Return Statement:**
+   ```c
+   return 0;
+   ```
+   - This signifies that the `main` function completes successfully and returns `0` to the operating system.
+
+### Output
+
+Given that `i` and `j` both represent the value `65`, the condition `i == j` evaluates to `true`. Thus, the output of this program will be:
+
+```
+C is WOW
+```
+
+### Summary
+
+- **Character to Integer Conversion:** In C, when comparing a character and an integer, the character is converted to its ASCII value for the comparison. In this case, `'A'` converts to `65`, so the comparison `i == j` (where `i` is also `65`) evaluates to true.
+- **Program Behavior:** The program prints `"C is WOW"` because the condition `i == j` is true.
+
+The program effectively demonstrates the implicit type conversion between characters and integers in C.
