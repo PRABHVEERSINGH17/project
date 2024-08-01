@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+  int a,b,c,d;
+  printf("Enter the 3 angles of the triangle:\n");
+  scanf("%d%d%d",&a,&b,&c);
+  d=a+b+c;
+  if(d==180){
+    printf("The triangle is valid");
+  }
+  else{
+    printf("Triangle is invalid");
+  }
+  return 0;
+}
+Enter the 3 angles of the triangle:
+70
+80
+10
+Triangle is invalid 
+Enter the 3 angles of the triangle:
+60
+60
+60
+The triangle is valid 
