@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+  int length,breadth,area,perimeter;
+  printf("Enter the length and breadth of the rectangle\n");
+  scanf("%d%d",&length,&breadth);
+  area=length*breadth;
+  perimeter=2*(length+breadth);
+  printf("The area of the rectangle %d and perimeter of rectangle is %d\n",area,perimeter);
+  if(area>perimeter){
+    printf("Area is greater than perimeter");
+  }
+  else{
+    printf("Area is less tha the perimeter");
+  }
+  return 0;
+}
+Enter the length and breadth of the rectangle
+68
+98
+The area of the rectangle 6664 and perimeter of rectangle is 332
+Area is greater than perimeter 
