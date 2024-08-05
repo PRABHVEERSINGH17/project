@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int x, y;
+
+    // Prompt the user to enter the coordinates
+    printf("Enter the coordinates (x y): ");
+    scanf("%d %d", &x, &y);
+
+    // Determine the position of the point relative to the axes and origin
+    if (x == 0 && y != 0) {
+        printf("Point lies on the y-axis\n");
+    } else if (x != 0 && y == 0) {
+        printf("Point lies on the x-axis\n");
+    } else if (x == 0 && y == 0) {
+        printf("Point lies at the origin\n");
+    } else {
+        printf("Point is neither on the x-axis, y-axis, nor at the origin\n");
+    }
+
+    return 0;
+}
+Enter the coordinates (x y): 8
+9 
+Point is neither on the x-axis, y-axis, nor at the origin
