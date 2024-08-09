@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+  char ch;
+  printf("\n Enter the character from the keyboard:");
+  scanf("%c",&ch);
+  if(ch>=65 && ch<=90){
+    printf("\n The character  is an uppercase letter ");
+  }
+  else if((ch>=0 && ch<48) ||(ch>57 && ch<65) || (ch>90 && ch<97) || ch>122){
+    printf("The character is special symbol");
+  } 
+  return 0;
+}
+
+ Enter the character from the keyboard:A
+
+ The character  is an uppercase letter 
+
+ Enter the character from the keyboard:&
+The character is special symbol 
