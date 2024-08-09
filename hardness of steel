@@ -1,0 +1,30 @@
+#include<stdio.h>
+void main(){
+  float hard,carbon,tensile;
+  printf("Enter the hardness of the steel:");
+  scanf("%f",&hard);
+  printf("Enter the carbon content of the steel:");
+  scanf("%f",&carbon);
+  printf("Enter the tensile strength of the steel:");
+  scanf("%f",&tensile );
+  if(hard>50&&carbon<0.7&&tensile>5600){
+    printf("Grade 10");
+  }
+  if(hard>50&&carbon<0.7&&tensile<=5600){
+    printf("\n Grade 9");
+  }
+  if(hard<=50&&carbon<0.7&&tensile>5600){
+    printf("\nGrade 8");
+  }
+  if(hard>50&&carbon>=0.7&&tensile>5600){
+    printf("\nGrade 7");
+  }
+  if(hard>50||carbon<0.7||tensile>5600){
+    printf("\n Grade 6");
+  }
+}
+Enter the hardness of the steel:50.0
+Enter the carbon content of the steel:5.6
+Enter the tensile strength of the steel:6890.0
+
+ Grade 6 
